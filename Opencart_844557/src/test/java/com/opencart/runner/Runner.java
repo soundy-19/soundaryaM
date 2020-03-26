@@ -11,13 +11,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "src/main/resources/feature/TaskTestcase.feature",
+features = "src/main/resources/features/openn.feature",
 plugin = {"pretty", "html:reports/cucumber-html-report","json:reports/cucumber-html-report/jsonreport","com.cucumber.listener.ExtentCucumberFormatter:reports/Extentreports/Extentreport.html"},
 //tags= {""},
-glue = {"com.taskmanagement.stepdefinition"},
+glue = {"com.opencart.steps"},
 monochrome = true
 )
-public class runn  {
+public class Runner  {
 	@AfterClass
   public static void extendReport() {
       Reporter.loadXMLConfig("src/test/resources/extent-config.xml");

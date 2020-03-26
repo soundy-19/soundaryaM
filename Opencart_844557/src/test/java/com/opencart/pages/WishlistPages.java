@@ -21,9 +21,9 @@ public class WishlistPages {
 	{
 		System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		driver.get("https://demo.opencart.com/");
+		driver.manage().window().maximize(); //maximizes the window
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS); //implicit wait occurs
+		driver.get("https://demo.opencart.com/"); //opens the site
 		driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/i")).click();
 		driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")).click();
 		driver.findElement(By.xpath("//*[@id=\"input-email\"]")).sendKeys("soundaryariya27@gmail.com");
@@ -41,12 +41,12 @@ public class WishlistPages {
 	//To take screenshot 
 			public void screenshot(String path) throws InterruptedException, IOException
 			{
-				Thread.sleep(4000);
+				Thread.sleep(4000); //waits for required time
 				TakesScreenshot snap = (TakesScreenshot)driver;
 				File source = snap.getScreenshotAs(OutputType.FILE);
 				FileUtils.copyFile(source, new File(path));
-				Thread.sleep(3000);
-				driver.close();
+				Thread.sleep(3000); //waits for required time
+				driver.close(); //browser is closed
 			}
 
 	
