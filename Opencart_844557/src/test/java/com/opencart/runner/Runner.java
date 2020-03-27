@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 features = "src/main/resources/features/openn.feature",
 plugin = {"pretty", "html:reports/cucumber-html-report","json:reports/cucumber-html-report/jsonreport","com.cucumber.listener.ExtentCucumberFormatter:reports/Extentreports/Extentreport.html"},
-//tags= {""},
+//tags= {"@tc_01"},
 glue = {"com.opencart.steps"},
 monochrome = true
 )

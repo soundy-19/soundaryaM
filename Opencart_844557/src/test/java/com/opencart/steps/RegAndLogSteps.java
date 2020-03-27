@@ -17,19 +17,7 @@ public class RegAndLogSteps
 			 
 			}
 
-	@When("^the  user opens opencart register page$")
-			public void the_user_opens_opencart_register_page() throws Throwable 
-			{
-				reglog.opencart_register();
-			    
-			}
-
-	@Then("^the user enters the valid register details$")
-			public void the_user_enters_the_valid_register_details() throws Throwable 
-			{
-				reglog.register_details();
-			   
-			}
+	
 	@When("^the  user opens opencart login page$")
 			public void the_user_opens_opencart_login_page() throws Throwable 
 			{

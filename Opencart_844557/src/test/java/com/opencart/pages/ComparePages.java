@@ -36,7 +36,7 @@ WebDriver driver;
 	//To take screenshot 
 	public void screenshot(String path) throws InterruptedException, IOException
 	{
-		Thread.sleep(4000);
+		Thread.sleep(4000); //waits for required time
 		TakesScreenshot snap = (TakesScreenshot)driver;
 		File source = snap.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(source, new File(path));

@@ -1,0 +1,558 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Registeration",
+        "description": "",
+        "id": "opencart-website;registeration",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15546020643,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launching the chrome browser and opening the website",
+            "match": {
+              "location": "Registration.launching_the_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103658213853,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters registeration details",
+            "match": {
+              "location": "Registration.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 272413543,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "close the browser",
+            "match": {
+              "location": "Registration.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@tc_01"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "RegAndLog",
+        "description": "",
+        "id": "opencart-website;regandlog;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15872769017,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user launch the browser for valid register",
+            "match": {
+              "location": "RegAndLogSteps.the_user_launch_the_browser_for_valid_register()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3907800706,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the  user opens opencart login page",
+            "match": {
+              "location": "RegAndLogSteps.the_user_opens_opencart_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9036773813,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user enters \"soundaryariya27@gmail.com\" and \"sound\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "soundaryariya27@gmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "sound",
+                  "offset": 49
+                }
+              ],
+              "location": "RegAndLogSteps.the_user_enters_the_valid_login_details(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 203883235,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user close the login page",
+            "match": {
+              "location": "RegAndLogSteps.the_user_close_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@tc02"
+          },
+          {
+            "line": 1,
+            "name": "@opencart_Feature"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "RegAndLog",
+        "description": "",
+        "id": "opencart-website;regandlog;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16271329779,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user launch the browser for valid register",
+            "match": {
+              "location": "RegAndLogSteps.the_user_launch_the_browser_for_valid_register()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4183888916,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the  user opens opencart login page",
+            "match": {
+              "location": "RegAndLogSteps.the_user_opens_opencart_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7778319141,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user enters \"lakshmikiruba80@gmail.com\" and \"kirubakar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lakshmikiruba80@gmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "kirubakar",
+                  "offset": 49
+                }
+              ],
+              "location": "RegAndLogSteps.the_user_enters_the_valid_login_details(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 224721067,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user close the login page",
+            "match": {
+              "location": "RegAndLogSteps.the_user_close_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@tc02"
+          },
+          {
+            "line": 1,
+            "name": "@opencart_Feature"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "RegAndLog",
+        "description": "",
+        "id": "opencart-website;regandlog;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25572320643,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user launch the browser for valid register",
+            "match": {
+              "location": "RegAndLogSteps.the_user_launch_the_browser_for_valid_register()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5743382663,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the  user opens opencart login page",
+            "match": {
+              "location": "RegAndLogSteps.the_user_opens_opencart_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7541720838,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user enters \"elakkiyamsp@gmail.com\" and \"elakkiya\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "elakkiyamsp@gmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "elakkiya",
+                  "offset": 45
+                }
+              ],
+              "location": "RegAndLogSteps.the_user_enters_the_valid_login_details(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2148407110,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user close the login page",
+            "match": {
+              "location": "RegAndLogSteps.the_user_close_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@tc02"
+          },
+          {
+            "line": 1,
+            "name": "@opencart_Feature"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "RegAndLog",
+        "description": "",
+        "id": "opencart-website;regandlog;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8368083716,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user launch the browser for valid register",
+            "match": {
+              "location": "RegAndLogSteps.the_user_launch_the_browser_for_valid_register()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1789032801,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the  user opens opencart login page",
+            "match": {
+              "location": "RegAndLogSteps.the_user_opens_opencart_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7036998668,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user enters \"sound\" and \"sound11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sound",
+                  "offset": 17
+                },
+                {
+                  "val": "sound11",
+                  "offset": 29
+                }
+              ],
+              "location": "RegAndLogSteps.the_user_enters_the_valid_login_details(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2088943143,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user close the login page",
+            "match": {
+              "location": "RegAndLogSteps.the_user_close_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@tc02"
+          },
+          {
+            "line": 1,
+            "name": "@opencart_Feature"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "",
+        "description": "Wishlist",
+        "id": "opencart-website;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26575246602,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user logged in",
+            "match": {
+              "location": "WishlistSteps.logedin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12698832898,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "add items to wishlist",
+            "match": {
+              "location": "WishlistSteps.wishes()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@tc03"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Comparison",
+        "description": "",
+        "id": "opencart-website;comparison",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12524645184,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "open the site",
+            "match": {
+              "location": "CompareSteps.log()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10042038674,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "compare price of 2 products",
+            "match": {
+              "location": "CompareSteps.comparison()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@tc04"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Specials",
+        "description": "",
+        "id": "opencart-website;specials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22067468422,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "click specials",
+            "match": {
+              "location": "SpecialSteps.logedin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9605589140,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "display special offers",
+            "match": {
+              "location": "SpecialSteps.wishes()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 37,
+            "name": "@tc05"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Gift",
+        "description": "",
+        "id": "opencart-website;gift",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29123342399,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "logged in to enter recipient details",
+            "match": {
+              "location": "GiftSteps.logedin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16664551539,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "enter recipient details",
+            "match": {
+              "location": "GiftSteps.wishes()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 42,
+            "name": "@tc06"
+          }
+        ]
+      }
+    ],
+    "name": "Opencart website",
+    "description": "",
+    "id": "opencart-website",
+    "keyword": "Feature",
+    "uri": "src/main/resources/features/openn.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@opencart_Feature"
+      }
+    ]
+  }
+]

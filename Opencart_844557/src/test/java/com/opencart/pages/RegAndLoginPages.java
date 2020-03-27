@@ -1,5 +1,6 @@
 package com.opencart.pages;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -8,10 +9,15 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.excelutility.ExcelData;
+
+
+
 public class RegAndLoginPages 
 {
-
+	
 	WebDriver driver;
+	ExcelData ex=new ExcelData();
 	By my_account=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a");
 	By register=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a");
 	By first_name=By.name("firstname");
@@ -65,18 +71,24 @@ public class RegAndLoginPages
 		driver.findElement(register).click(); //select register from my account
 	}
 	
-	public void register_details() throws InterruptedException
-	{
-		driver.findElement(first_name).sendKeys("sound"); //get first name from user
-		driver.findElement(last_name).sendKeys("m"); //get last name from user
-		driver.findElement(email).sendKeys("soundaryariya27@gmail.com"); //get email from user
-		driver.findElement(telephone).sendKeys("1234567890"); //get telephone from user
-		driver.findElement(password).sendKeys("sound"); //get password from user
-		driver.findElement(confirm).sendKeys("sound"); //confirms the entered password
+	public void register_details() throws InterruptedException, IOException
+	{for(int i=1;i<7;i++)
+		
+	{driver.findElement(my_account).click(); //click my account
+	driver.findElement(register).click(); //select register from my account
+	Thread.sleep(5000);
+		driver.findElement(first_name).sendKeys(ex.first_name(i)); //get first name from user
+		driver.findElement(last_name).sendKeys(ex.Lastname(i)); //get last name from user
+		driver.findElement(email).sendKeys(ex.email(i)); //get email from user
+		driver.findElement(telephone).sendKeys(ex.phone(i)); //get telephone from user
+		driver.findElement(password).sendKeys(ex.pass(i)); //get password from user
+		driver.findElement(confirm).sendKeys(ex.C_pass(i)); //confirms the entered password
 		driver.findElement(agree).click(); //agree to the terms and condition
 		driver.findElement(register_submit).click(); //click the submit button
 		Thread.sleep(3000); 
-	}
+		
+		driver.get("https://demo.opencart.com/");
+	}}
 	public void opencart_login()
 	{
 		driver.findElement(my_account).click();//click my account
